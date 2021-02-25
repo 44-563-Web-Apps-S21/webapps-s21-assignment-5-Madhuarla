@@ -11,6 +11,23 @@
   <title>plants page</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="plants.html">Happy Plants</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="cat.html">Cat<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="dog.html">Dog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <h1>Plants by Madhu Babu Arla</h1>
     <div class ="container">
         <div class = "row">
@@ -34,15 +51,123 @@
     <p>Second row is breaing first at 770 pixel and first row will not break untill 575 pixels</p>
     <div class="container">
         <img src="ramonda.jpg" class="img-fluid" alt="Responsive image" width="500px" height="500px"> 
-        <img src="Lobelia.jpg" class="img-fluid" alt="Responsive image" width="400px" height="400px"> 
+        <img src="Lobelia.jpg" class="img-fluid" alt="Responsive image" width="500px" height="500px"> 
         <img src="Magnolia.jpg" class="img-fluid" alt="Responsive image" height="500px" width="500px"> 
 
     </div>
     <div class="container">
-        <img src="ramonda.jpg" class="img-thumbnail" alt="Responsive image" width="250px" height="250px"> 
+        <img src="ramonda.jpg" class="img-thumbnail" alt="Responsive image" width="240px" height="240px"> 
         <img src="Lobelia.jpg" class="img-thumbnail" alt="Responsive image" width="200px" height="200px"> 
         <img src="Magnolia.jpg" class="img-thumbnail" alt="Responsive image" height="200px" width="200px"> 
 
+    </div>
+    <table class="table table-bordered table-dark table-striped table-hover table-sm">
+        <caption>Table</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Letter</th>
+                    <th scope="col">Plant</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Food</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">A</th>
+                    <td class="bg-info">Abelia</td>
+                    <td class="bg-success">Arlington</td>
+                    <td class="bg-info">Almond</td>
+                </tr>
+                <tr>
+                    <th scope="row">R</th>
+                    <td class="bg-success">Ramonda</td>
+                    <td class="bg-info">Radford</td>
+                    <td class="bg-success">Raman</td>
+                </tr>
+                <tr>
+                    <th scope="row">L</th>
+                    <td class="bg-info">Lobelia</td>
+                    <td class="bg-success">Los angeles</td>
+                    <td class="bg-info">Laddu</td>
+                </tr>
+                <tr>
+                    <th scope="row">A</th>
+                    <td class="bg-success">Abroma</td>
+                    <td class="bg-info">Apex</td>
+                    <td class="bg-success">Anchovies</td>
+                </tr>
+                <tr>
+                    <th scope="row">M</th>
+                    <td class="bg-info">Magnolia</td>
+                    <td class="bg-success">Miani</td>
+                    <td class="bg-info">Manchuriya</td>
+                </tr>
+                <tr>
+                    <th scope="row">A</th>
+                    <td class="bg-success">Azara</td>
+                    <td class="bg-info">Austin</td>
+                    <td class="bg-success">Avacado</td>
+                </tr>
+            </tbody>
+    </table>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="Plant Letters">
+            <button type="button" class="btn btn-secondary  bg-success">R</button>
+            <button type="button" class="btn btn-secondary  bg-success">L</button>
+            <button type="button" class="btn btn-secondary  bg-success">M</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Plant Letters">
+            <button type="button" class="btn btn-secondary bg-warning">A</button>
+            <button type="button" class="btn btn-secondary bg-warning">A</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Plant Letters">
+            <button type="button" class="btn btn-secondary bg-danger">A</button>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Choose a Link
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="cat.html">Cat Page</a>
+            <a class="dropdown-item" href="dog.html">Dog Page</a>
+          </div>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="InputEmail">Email address</label>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="InputYourText">Plant</label>
+            <input type="text" class="form-control" id="InputYourText" placeholder="Enter Your Plant">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="Check">
+            <label class="form-check-label" for="Check">Signup for Newsletter?</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="Lobelia.jpg" alt="Lobelia">
+        <div class="card-body">
+          <h5 class="card-title">Lobelia</h5>
+          <p class="card-text">Lobelia (/loʊˈbiːliə, lə-/[4][5][6]) is a genus of flowering plants comprising 415 species,[7] with a subcosmopolitan distribution primarily in tropical to warm temperate regions of the world, a few species extending into cooler temperate regions.[8] They are known generally as lobelias.</p>
+          <a href="https://en.wikipedia.org/wiki/Lobelia" class="btn btn-primary">Go</a>
+        </div>
+        <img class="card-img-top" src="Magnolia.jpg" alt="Magnolia">
+        <div class="card-body">
+          <h5 class="card-title">Magnolia</h5>
+          <p class="card-text">Magnolia Market at the Silos, commonly called Magnolia Market, is a shopping complex that encompasses two city blocks in downtown Waco, Texas. It is marked by two 120’ high silos, built in 1950 as part of the Brazos Valley Cotton Oil Company.[5].</p>
+          <a href="https://en.wikipedia.org/wiki/Magnolia_Market" class="btn btn-primary">Go</a>
+        </div>
+        <img class="card-img-top" src="ramonda.jpg" alt="Ramonda">
+        <div class="card-body">
+          <h5 class="card-title">Ramonda</h5>
+          <p class="card-text">Ramonda is a genus of three species of flowering plants in the family Gesneriaceae, native to shady, rocky places in north eastern Spain, the Pyrenees and south eastern Europe. They are evergreen poikilohydryc perennials which form rosettes of crinkly leaves with nearly actinomorphic flowers,[1] borne on leafless stems in spring.[2].</p>
+          <a href="https://en.wikipedia.org/wiki/Ramonda_(plant)" class="btn btn-primary">Go</a>
+        </div>
     </div>
 
     
